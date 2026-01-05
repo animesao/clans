@@ -1,0 +1,81 @@
+# ========================================
+#    Clan Roles & Permissions Configuration
+# ========================================
+
+# Global default ranks and their permissions
+# These are used as templates for clans
+ranks:
+  RECRUIT:
+    name: "Новичок"
+    prefix: "&7[Н]"
+    priority: 0
+    permissions:
+      - CHAT
+      - HOME
+      - STORAGE_VIEW
+      - STORAGE_DEPOSIT
+  MEMBER:
+    name: "Участник"
+    prefix: "&a[У]"
+    priority: 1
+    permissions:
+      - CHAT
+      - HOME
+      - STORAGE_VIEW
+      - STORAGE_DEPOSIT
+      - STORAGE_WITHDRAW
+      - BANK_DEPOSIT
+  OFFICER:
+    name: "Офицер"
+    prefix: "&e[О]"
+    priority: 2
+    permissions:
+      - CHAT
+      - HOME
+      - STORAGE_VIEW
+      - STORAGE_MODIFY
+      - STORAGE_DEPOSIT
+      - STORAGE_WITHDRAW
+      - BANK_DEPOSIT
+      - INVITE
+  ELDER:
+    name: "Старейшина"
+    prefix: "&6[С]"
+    priority: 3
+    permissions:
+      - CHAT
+      - HOME
+      - STORAGE_VIEW
+      - STORAGE_MODIFY
+      - STORAGE_DEPOSIT
+      - STORAGE_WITHDRAW
+      - BANK_DEPOSIT
+      - BANK_WITHDRAW
+      - INVITE
+      - KICK
+      - SET_HOME
+  COLEADER:
+    name: "Со-Лидер"
+    prefix: "&b[СЛ]"
+    priority: 4
+    permissions:
+      - CHAT
+      - HOME
+      - STORAGE_VIEW
+      - STORAGE_MODIFY
+      - STORAGE_DEPOSIT
+      - STORAGE_WITHDRAW
+      - BANK_DEPOSIT
+      - BANK_WITHDRAW
+      - INVITE
+      - KICK
+      - SET_HOME
+      - PROMOTE
+      - DEMOTE
+      - MANAGE_QUESTS
+  LEADER:
+    name: "Лидер"
+    prefix: "&c[Л]"
+    priority: 100
+    permissions:
+      - ALL

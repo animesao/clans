@@ -1,0 +1,103 @@
+# ========================================
+#    Clan Messages Configuration
+#    Author: animesao
+#    Поддержка HEX цветов: &#RRGGBB
+# ========================================
+
+messages:
+  # Использование команд
+  usage:
+    create: ["&cИспользуйте: /clan create <название> <тег>", true]
+
+  # Общие сообщения
+  no-permission: ["&cУ вас нет прав для этого действия!", true]
+  player-only: ["&cЭта команда только для игроков!", true]
+  player-not-found: ["&cИгрок не найден!", true]
+  not-in-clan: ["&cВы не состоите в клане!", true]
+  already-in-clan: ["&cВы уже состоите в клане!", true]
+
+  # Создание клана
+  created: ["&aВы успешно создали клан &f%clan% &7[%tag%]", true]
+  clan-created: ["&aВы успешно создали клан &f%clan% &7[%tag%]", true]
+  clan-name-taken: ["&cКлан с таким названием уже существует!", true]
+  clan-tag-taken: ["&cКлан с таким тегом уже существует!", true]
+  clan-name-invalid: ["&cНазвание содержит недопустимые символы!", true]
+  clan-tag-invalid: ["&cТег содержит недопустимые символы!", true]
+  clan-name-length: ["&cНазвание должно быть от %min% до %max% символов!", true]
+  clan-tag-length: ["&cТег должен быть от %min% до %max% символов!", true]
+
+  # Приглашения
+  invite-sent: ["&aВы пригласили игрока &f%player% &aв клан!", true]
+  invite-received: ["&aВас пригласили в клан &f%clan% &7[%tag%]", true]
+  invite-accept-hint: ["&aИспользуйте &f/clan accept %tag% &aчтобы принять!", true]
+  invite-not-found: ["&cПриглашение не найдено или истекло!", true]
+  invite-expired: ["&cПриглашение истекло!", true]
+
+  # Участники
+  member-joined: ["&aИгрок &f%player% &aприсоединился к клану!", true]
+  member-left: ["&cИгрок &f%player% &cпокинул клан!", true]
+  member-kicked: ["&cИгрок &f%player% &cбыл исключен из клана!", true]
+  member-promoted: ["&aИгрок &f%player% &aбыл повышен до &f%rank%", true]
+  member-demoted: ["&cИгрок &f%player% &cбыл понижен до &f%rank%", true]
+  member-limit-reached: ["&cВ клане достигнут лимит участников!", true]
+
+  # Лидерство
+  leader-transferred: ["&aЛидерство клана передано игроку &f%player%", true]
+  leader-only: ["&cТолько лидер может это сделать!", true]
+
+  # Расформирование
+  clan-disbanded: ["&cКлан &f%name% &cбыл расформирован!", true]
+  disband-confirm: ["&cВы уверены? Введите команду ещё раз для подтверждения!", true]
+
+  # Дом клана
+  home-teleported: ["&aВы телепортированы на базу клана!", true]
+  home-set: ["&aБаза клана была установлена!", true]
+  home-not-set: ["&cДом клана не установлен!", true]
+  home-cooldown: ["&cПодождите ещё &f%time% &cсекунд!", true]
+
+  # Уровни
+  level-up: ["&6&l★ &e&lКЛАН ПОЛУЧИЛ НОВЫЙ УРОВЕНЬ! &6&l★", true]
+  level-up-info: ["&7Ваш клан достиг уровня &a%level%&7!", true]
+
+  # Хранилище
+  storage-upgraded: ["&aХранилище клана улучшено до уровня &f%level%", true]
+  storage-no-access: ["&cУ вас нет доступа к хранилищу!", true]
+  storage-max-level: ["&cДостигнут максимальный уровень хранилища!", true]
+
+  # Задания
+  quest-started: ["&aНовое задание: &f%quest%", true]
+  quest-completed: ["&a&lЗадание выполнено: &f%quest%", true]
+  quest-expired: ["&cЗадание &f%quest% &cистекло!", true]
+  quest-progress: ["&7Прогресс: &f%current%/%target%", true]
+  quest-already-active: ["&cЭто задание уже активно!", true]
+  quest-min-level: ["&cТребуется уровень клана: &f%level%", true]
+
+  # Настройки
+  pvp-enabled: ["&aPVP внутри клана включен", true]
+  pvp-disabled: ["&cPVP внутри клана выключен", true]
+  pvp-blocked: ["&cPVP внутри клана выключен!", true]
+  color-changed: ["&aЦвет клана изменен на %color%", true]
+  color-invalid: ["&cНеверный HEX цвет! Пример: #FF5733", true]
+
+  # Чат
+  clan-chat-enabled: ["&aКлановый чат включен", true]
+  clan-chat-disabled: ["&cКлановый чат выключен", true]
+
+  # Онлайн статусы
+  member-online: ["&aУчастник &f%player% &aвошёл в игру!", true]
+  member-offline: ["&cУчастник &f%player% &cвышел из игры", true]
+
+  # Ошибки
+  clan:
+    created: ["&aКлан &f%clan% &7[%tag%] &aуспешно создан!", true]
+  
+  clan-created-broadcast: ["&aИгрок &f%player% &aсоздал клан &f%clan% &7[%tag%]", false]
+
+  errors:
+    already-in-clan: ["&cВы уже состоите в клане!", true]
+    not-in-clan: ["&cВы не состоите в клане!", true]
+    clan-not-found: ["&cКлан не найден!", true]
+    no-permission: ["&cУ вас нет прав!", true]
+    player-not-found: ["&cИгрок не найден!", true]
+    player-offline: ["&cИгрок не в сети!", true]
+    insufficient-funds: ["&cНедостаточно средств! Требуется: %amount%", true]

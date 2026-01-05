@@ -1,0 +1,168 @@
+# ========================================
+#    Clan Quests Configuration
+#    Author: animesao
+# ========================================
+
+# Типы заданий:
+# KILL_MOBS - Убийство мобов
+# KILL_PLAYERS - Убийство игроков
+# MINE_BLOCKS - Добыча блоков
+# MINE_ORES - Добыча руды
+# CRAFT_ITEMS - Крафт предметов
+# PLACE_BLOCKS - Размещение блоков
+# FISH - Рыбалка
+# BREED_ANIMALS - Разведение животных
+# ENCHANT_ITEMS - Зачарование предметов
+# TRADE_VILLAGERS - Торговля с жителями
+# TRAVEL_DISTANCE - Пройти расстояние
+# COLLECT_EXPERIENCE - Собрать опыт
+
+quests:
+  # Легкие задания (уровень 1-5)
+  kill_mobs_easy:
+    name: "Охотник на мобов"
+    description: "Убейте 50 мобов"
+    type: KILL_MOBS
+    target: 50
+    experience: 500
+    duration: 86400000  # 24 часа в миллисекундах
+    min-level: 1
+    
+  mine_blocks_easy:
+    name: "Начинающий шахтёр"
+    description: "Добудьте 200 блоков"
+    type: MINE_BLOCKS
+    target: 200
+    experience: 400
+    duration: 86400000
+    min-level: 1
+    
+  fish_easy:
+    name: "Рыбак"
+    description: "Поймайте 30 рыб"
+    type: FISH
+    target: 30
+    experience: 600
+    duration: 86400000
+    min-level: 2
+    
+  # Средние задания (уровень 5-15)
+  kill_mobs_medium:
+    name: "Опытный охотник"
+    description: "Убейте 200 мобов"
+    type: KILL_MOBS
+    target: 200
+    experience: 2000
+    duration: 86400000
+    min-level: 5
+    
+  mine_ores_medium:
+    name: "Рудокоп"
+    description: "Добудьте 100 руды"
+    type: MINE_ORES
+    target: 100
+    experience: 1500
+    duration: 86400000
+    min-level: 5
+    
+  fish_medium:
+    name: "Мастер рыбалки"
+    description: "Поймайте 100 рыб"
+    type: FISH
+    target: 100
+    experience: 2000
+    duration: 86400000
+    min-level: 8
+    
+  kill_players_medium:
+    name: "Воин"
+    description: "Убейте 10 игроков"
+    type: KILL_PLAYERS
+    target: 10
+    experience: 3000
+    duration: 86400000
+    min-level: 10
+    
+  # Сложные задания (уровень 15+)
+  kill_mobs_hard:
+    name: "Истребитель мобов"
+    description: "Убейте 500 мобов"
+    type: KILL_MOBS
+    target: 500
+    experience: 5000
+    duration: 172800000  # 48 часов
+    min-level: 15
+    
+  mine_ores_hard:
+    name: "Мастер-шахтёр"
+    description: "Добудьте 500 руды"
+    type: MINE_ORES
+    target: 500
+    experience: 7500
+    duration: 172800000
+    min-level: 15
+    
+  kill_players_hard:
+    name: "Элитный воин"
+    description: "Убейте 50 игроков"
+    type: KILL_PLAYERS
+    target: 50
+    experience: 15000
+    duration: 259200000  # 72 часа
+    min-level: 20
+    
+  # Эпические задания (уровень 25+)
+  kill_mobs_epic:
+    name: "Легенда охоты"
+    description: "Убейте 2000 мобов"
+    type: KILL_MOBS
+    target: 2000
+    experience: 25000
+    duration: 604800000  # 7 дней
+    min-level: 25
+    
+  mine_ores_epic:
+    name: "Повелитель шахт"
+    description: "Добудьте 2000 руды"
+    type: MINE_ORES
+    target: 2000
+    experience: 30000
+    duration: 604800000
+    min-level: 25
+    
+  kill_players_epic:
+    name: "Легенда PvP"
+    description: "Убейте 200 игроков"
+    type: KILL_PLAYERS
+    target: 200
+    experience: 50000
+    duration: 604800000
+    min-level: 30
+
+  # Высшие задания (уровень 40+)
+  kill_mobs_legendary:
+    name: "Бич монстров"
+    description: "Убейте 5000 мобов"
+    type: KILL_MOBS
+    target: 5000
+    experience: 75000
+    duration: 1209600000 # 14 дней
+    min-level: 40
+
+  mine_ores_legendary:
+    name: "Властелин недр"
+    description: "Добудьте 5000 руды"
+    type: MINE_ORES
+    target: 5000
+    experience: 85000
+    duration: 1209600000
+    min-level: 40
+
+  kill_players_legendary:
+    name: "Бог войны"
+    description: "Убейте 500 игроков"
+    type: KILL_PLAYERS
+    target: 500
+    experience: 150000
+    duration: 1209600000
+    min-level: 45

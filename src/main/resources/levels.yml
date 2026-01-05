@@ -1,0 +1,73 @@
+# ========================================
+#    Clan Levels Configuration
+#    Author: animesao
+# ========================================
+
+# Максимальный уровень клана
+max-level: 50
+
+# Настройки уровней
+# experience - необходимый опыт для достижения уровня
+# rewards - награды за достижение уровня
+#   members - дополнительные слоты для участников
+#   storage-upgrade - улучшение хранилища
+
+levels:
+  1:
+    experience: 0
+    color: "#AAAAAA"
+    prefix: "&8["
+    suffix: "&8]"
+  2:
+    experience: 1000
+    color: "#FFFFFF"
+    prefix: "&f["
+    suffix: "&f]"
+    rewards:
+      members: 2
+  5:
+    experience: 10000
+    color: "#55FF55"
+    prefix: "&a&l["
+    suffix: "&a&l]"
+    rewards:
+      members: 2
+      storage-upgrade: true
+  10:
+    experience: 75000
+    color: "#55FFFF"
+    prefix: "&b&l["
+    suffix: "&b&l]"
+    rewards:
+      members: 3
+      storage-upgrade: true
+  25:
+    experience: 1050000
+    color: "#FF55FF"
+    prefix: "&d&l★["
+    suffix: "&d&l]★"
+    rewards:
+      members: 5
+      storage-upgrade: true
+  50:
+    experience: 35000000
+    color: "#FFAA00"
+    prefix: "&6&l⚡["
+    suffix: "&6&l]⚡"
+    rewards:
+      members: 10
+
+# Стоимость улучшения хранилища (в опыте клана)
+storage-upgrades:
+  2:
+    cost: 5000
+    required-level: 5
+  3:
+    cost: 15000
+    required-level: 10
+  4:
+    cost: 35000
+    required-level: 15
+  5:
+    cost: 75000
+    required-level: 20

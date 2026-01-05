@@ -1,0 +1,449 @@
+main-menu:
+  title: "&8Меню клана"
+  size: 54
+  fill-border: true
+  border-item:
+    material: BLACK_STAINED_GLASS_PANE
+    name: " "
+  items:
+    info:
+      slot: 4
+      material: PLAYER_HEAD
+      skull-owner: "%player_name%"
+      name: "&6%clan_name% &7[%clan_tag%]"
+      lore:
+        - "&7Уровень: &f%clan_level%"
+        - "&7Опыт: &f%clan_experience%"
+        - "&7Участников: &f%clan_members%/%clan_max_members%"
+        - ""
+        - "&7Убийств: &a%clan_kills%"
+        - "&7Смертей: &c%clan_deaths%"
+        - "&7K/D: &f%clan_kdr%"
+    members:
+      slot: 20
+      material: PLAYER_HEAD
+      skull-texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTg0ZGRjYTc2NjcyNWU4Njc2ZmM5ZGU1Zjg3YmM5N2M2YzAyNWE4ZDFjMzY3MmQ1NjAyYjZiZDM0YTNhMDI5MCJ9fX0="
+      name: "&#FFD700⚔ Участники клана"
+      lore:
+        - ""
+        - "&8▸ &7Всего: &#FFD700%clan_members%"
+        - "&8▸ &7Онлайн: &a%clan_online%"
+        - ""
+        - "&7▶ &eНажмите для просмотра"
+    storage:
+      slot: 22
+      material: PLAYER_HEAD
+      skull-texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDVjNmRjMmJiZjUxYzM2Y2ZjNzcxNDU4NWE2YTU2ODNlZjJiMTRkNDdkOGZmNzE0NjU0YTg5M2Y1ZGE2MjIifX19"
+      name: "&#9B59B6✦ Хранилище клана"
+      lore:
+        - ""
+        - "&8▸ &7Уровень: &#9B59B6%clan_storage_level%"
+        - "&8▸ &7Страниц: &#9B59B6%clan_storage_pages%"
+        - ""
+        - "&7▶ &eНажмите для открытия"
+    quests:
+      slot: 24
+      material: PLAYER_HEAD
+      skull-texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWQ2ZGU1ZGU2NThlZWZjMDgxNmE4NmJmODZiMjI3MmVkMWNmNDZhNWRkZDEzN2Y2ZDMxYWUyMmFkMjZiMDQwZiJ9fX0="
+      name: "&#3498DB✎ Задания клана"
+      lore:
+        - ""
+        - "&8▸ &7Активных: &#3498DB%clan_active_quests%"
+        - "&8▸ &7Выполнено: &#3498DB%clan_completed_quests%"
+        - ""
+        - "&7▶ &eНажмите для просмотра"
+    home:
+      slot: 30
+      material: PLAYER_HEAD
+      skull-texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjBhN2I5NGM3NzI4M2U1MTc5ZjFhNjk5NjIzYmRkMWJmNDljMjFjZDk1MTJhNTIxMjdmNmYyMWQ0YmM3N2UyIn19fQ=="
+      name: "&#E74C3C⌂ Дом клана"
+      name-no-home: "&#95A5A6⌂ Дом клана"
+      lore:
+        - ""
+        - "&8▸ &7Мир: &#E74C3C%home_world%"
+        - "&8▸ &7X: &#E74C3C%home_x%"
+        - "&8▸ &7Y: &#E74C3C%home_y%"
+        - "&8▸ &7Z: &#E74C3C%home_z%"
+        - ""
+        - "&7▶ &eНажмите для телепортации"
+      lore-no-home:
+        - ""
+        - "&cДом не установлен"
+        - ""
+        - "&7Используйте &f/clan sethome"
+    bank:
+      slot: 31
+      material: PLAYER_HEAD
+      skull-texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzVjOWNjY2Y2MWE2ZTYyODRmZTliYmU2NDkxNTViZTRkOWNhOTZmNzhmZmNiMjc5Yjc4ZDdkNzJlYzk5In19fQ=="
+      name: "&#2ECC71$ Казна клана"
+      lore:
+        - ""
+        - "&8▸ &7Баланс: &#2ECC71%clan_bank%"
+        - ""
+        - "&7▶ &eНажмите для управления"
+    top:
+      slot: 32
+      material: PLAYER_HEAD
+      skull-texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjlhZGVlMzRjNGIzODdiZjA1OWQ3ZWQ0YTkzNTI0NzNlMTlhOGNlNzE2MTI3NjFjYjBmOGQyOTFmYzJlMTIifX19"
+      name: "&#F1C40F★ Топ кланов"
+      lore:
+        - ""
+        - "&7Посмотреть лучшие кланы"
+        - "&7на сервере"
+        - ""
+        - "&7▶ &eНажмите для просмотра"
+    settings:
+      slot: 49
+      material: PLAYER_HEAD
+      skull-texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTRkNDliYWU5NWM3OTBjM2IxZmY1YjJmMDEwNTJhNzE0ZDMzNjA3ZmEzZjUyNzZhMjU1N2M1YmI0NjhkZjZiNiJ9fX0="
+      name: "&#95A5A6⚙ Настройки"
+      lore:
+        - ""
+        - "&7Управление кланом"
+        - ""
+        - "&7▶ &eНажмите для открытия"
+    close:
+      slot: 45
+      material: BARRIER
+      name: "&c✖ Закрыть"
+
+members-menu:
+  title: "&8Участники клана"
+  size: 54
+  fill-border: true
+  border-item:
+    material: BLACK_STAINED_GLASS_PANE
+    name: " "
+  member-item:
+    online-glow: true
+    name: "&e%member_name%"
+    name-online: "&a%member_name%"
+    name-offline: "&7%member_name%"
+    lore:
+      - "&7Ранг: %member_rank%"
+      - "&7Убийств: &a%member_kills%"
+      - "&7Смертей: &c%member_deaths%"
+      - "&7K/D: &f%member_kdr%"
+      - "&7Вклад: &f%member_contribution%"
+      - ""
+      - "&7Присоединился: &f%member_joined%"
+      - "&7Статус: %member_status%"
+  back-button:
+    slot: 49
+    material: ARROW
+    name: "&7Назад"
+
+storage-menu:
+  title: "&8Хранилище клана"
+  size: 54
+  border-item:
+    material: BLACK_STAINED_GLASS_PANE
+    name: " "
+  info-item:
+    slot: 4
+    material: ENDER_CHEST
+    name: "&#9B59B6✦ Хранилище клана ✦"
+    lore:
+      - ""
+      - "&7┃ Уровень: &#FFD700%clan_storage_level%"
+      - "&7┃ Страница: &#FFD700%page%&7/&#FFD700%max_pages%"
+      - "&7┃ Ваш режим: %access_mode%"
+      - ""
+      - "&8▪ &7Кликните на предмет чтобы взять"
+      - "&8▪ &7Положите предмет из инвентаря"
+  navigation:
+    prev-page:
+      slot: 45
+      material: ARROW
+      name: "&#FFD700◀ Предыдущая страница"
+      lore:
+        - "&7Нажмите чтобы перейти"
+        - "&7на предыдущую страницу"
+    next-page:
+      slot: 53
+      material: ARROW
+      name: "&#FFD700Следующая страница ▶"
+      lore:
+        - "&7Нажмите чтобы перейти"
+        - "&7на следующую страницу"
+    back:
+      slot: 49
+      material: BARRIER
+      name: "&c✖ Назад в меню"
+
+quests-menu:
+  title: "&8Задания клана"
+  size: 54
+  fill-border: true
+  border-item:
+    material: BLACK_STAINED_GLASS_PANE
+    name: " "
+  info-item:
+    slot: 4
+    material: BOOK
+    name: "&#3498DBЗадания клана"
+    lore:
+      - "&7Активных заданий: &f%active_quests%"
+      - "&7Всего выполнено: &f%completed_quests%"
+  active-quest-item:
+    name: "&#FFD700%quest_name%"
+    lore:
+      - "&7%quest_description%"
+      - ""
+      - "&7Прогресс: &f%quest_progress%/%quest_target%"
+      - "&7%progress_bar%"
+      - ""
+      - "&7Награда: &a%quest_reward% опыта"
+      - "&7Осталось: &f%quest_time_left%"
+      - ""
+      - "%quest_status%"
+  available-button:
+    slot: 40
+    material: EMERALD
+    name: "&#2ECC71Взять новое задание"
+    lore:
+      - "&7Нажмите для выбора"
+      - "&7нового задания"
+  back-button:
+    slot: 49
+    material: ARROW
+    name: "&7Назад"
+
+available-quests-menu:
+  title: "&8Доступные задания"
+  size: 54
+  fill-border: true
+  border-item:
+    material: BLACK_STAINED_GLASS_PANE
+    name: " "
+  quest-item:
+    name: "&#FFD700%quest_name%"
+    lore:
+      - "&7%quest_description%"
+      - ""
+      - "&7Тип: &f%quest_type%"
+      - "&7Цель: &f%quest_target%"
+      - "&7Награда: &a%quest_reward% опыта"
+      - "&7Время: &f%quest_duration%"
+      - "&7Мин. уровень: &f%quest_min_level%"
+      - ""
+      - "&eНажмите для принятия"
+  back-button:
+    slot: 49
+    material: ARROW
+    name: "&7Назад"
+
+top-menu:
+  title: "&8Топ кланов"
+  size: 54
+  fill-border: true
+  border-item:
+    material: BLACK_STAINED_GLASS_PANE
+    name: " "
+  position-materials:
+    1: GOLD_BLOCK
+    2: IRON_BLOCK
+    3: EMERALD_BLOCK
+    default: COAL_BLOCK
+  clan-item:
+    name: "&6#%position% %clan_colored_name% &7[%clan_tag%]"
+    lore:
+      - "&7Уровень: &f%clan_level%"
+      - "&7Опыт: &f%clan_experience%"
+      - "&7Участников: &f%clan_members%"
+      - "&7Убийств: &a%clan_kills%"
+      - "&7K/D: &f%clan_kdr%"
+  back-button:
+    slot: 49
+    material: ARROW
+    name: "&7Назад"
+
+settings-menu:
+  title: "&8Настройки клана"
+  size: 54
+  fill-border: true
+  border-item:
+    material: BLACK_STAINED_GLASS_PANE
+    name: " "
+  items:
+    pvp-toggle:
+      slot: 20
+      material: DIAMOND_SWORD
+      name: "&#E74C3CPVP внутри клана"
+      lore:
+        - "&7Статус: %pvp_status%"
+        - ""
+        - "&eНажмите для переключения"
+    color:
+      slot: 22
+      material: NAME_TAG
+      name: "&#F1C40FЦвет клана"
+      lore:
+        - "&7Текущий: %clan_color_preview%"
+        - ""
+        - "&eНажмите для выбора цвета"
+    upgrade-storage:
+      slot: 24
+      material: ENDER_CHEST
+      name: "&#9B59B6Улучшить хранилище"
+      lore:
+        - "&7Текущий уровень: &f%clan_storage_level%"
+        - "&7Стоимость: &f%upgrade_cost% опыта"
+        - ""
+        - "&eНажмите для улучшения"
+    home-settings:
+      slot: 30
+      material: LODESTONE
+      name: "&#E74C3CУправление домом"
+      lore:
+        - "&7Левый клик: &fУстановить точку"
+        - "&7Правый клик: &fУдалить точку"
+        - ""
+        - "&8▸ &7Текущий статус: %home_status%"
+        - ""
+        - "&eНажмите для управления"
+    clan-manage:
+      slot: 38
+      material: PLAYER_HEAD
+      skull-texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmFkYjY0ZDI0MzY2NDhjOTdjMzY2ZGE3MmUxYjU5MTYyOWFlZjk0YWRjNGI4NDY4M2I2ZTY5Y2M0MWU5MDcwIn19fQ=="
+      name: "&#95A5A6⚙ Управление кланом"
+      lore:
+        - "&7Настройка прав и"
+        - "&7расформирование"
+        - ""
+        - "&eНажмите для открытия"
+    role-manage:
+      slot: 40
+      material: PLAYER_HEAD
+      skull-owner: "%player_name%"
+      name: "&#F1C40F⚔ Управление ролями"
+      lore:
+        - "&7Настройка названий и"
+        - "&7префиксов ролей"
+        - ""
+        - "&eНажмите для открытия"
+  back-button:
+    slot: 49
+    material: ARROW
+    name: "&7Назад"
+
+bank-menu:
+  title: "&8Казна клана"
+  size: 45
+  fill-border: true
+  border-item:
+    material: LIME_STAINED_GLASS_PANE
+    name: " "
+  info-item:
+    slot: 4
+    material: PLAYER_HEAD
+    skull-texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzVjOWNjY2Y2MWE2ZTYyODRmZTliYmU2NDkxNTViZTRkOWNhOTZmNzhmZmNiMjc5Yjc4ZDdkNzJlYzk5In19fQ=="
+    name: "&#2ECC71$ Казна клана"
+    lore:
+      - ""
+      - "&8━━━━━━━━━━━━━━━━━━"
+      - "&8▸ &7Баланс казны: &#2ECC71%clan_bank%"
+      - "&8▸ &7Ваш баланс: &#FFD700%player_balance%"
+      - "&8━━━━━━━━━━━━━━━━━━"
+  deposit-buttons:
+    100:
+      slot: 20
+      material: GOLD_INGOT
+      amount: 1
+      name: "&#2ECC71⬇ Внести 100"
+      lore:
+        - "&7Внести 100 в казну"
+    1000:
+      slot: 21
+      material: GOLD_INGOT
+      amount: 10
+      name: "&#2ECC71⬇ Внести 1000"
+      lore:
+        - "&7Внести 1000 в казну"
+    10000:
+      slot: 22
+      material: GOLD_BLOCK
+      amount: 1
+      name: "&#2ECC71⬇ Внести 10000"
+      lore:
+        - "&7Внести 10000 в казну"
+  withdraw-buttons:
+    100:
+      slot: 23
+      material: IRON_INGOT
+      amount: 1
+      name: "&#E74C3C⬆ Снять 100"
+      lore:
+        - "&7Снять 100 из казны"
+    1000:
+      slot: 24
+      material: IRON_INGOT
+      amount: 10
+      name: "&#E74C3C⬆ Снять 1000"
+      lore:
+        - "&7Снять 1000 из казны"
+    10000:
+      slot: 25
+      material: IRON_BLOCK
+      amount: 1
+      name: "&#E74C3C⬆ Снять 10000"
+      lore:
+        - "&7Снять 10000 из казны"
+  economy-disabled:
+    slot: 22
+    material: BARRIER
+    name: "&cЭкономика недоступна"
+    lore:
+      - "&7Для использования казны"
+      - "&7необходим плагин Vault"
+      - "&7с экономическим плагином"
+  back-button:
+    slot: 40
+    material: ARROW
+    name: "&7◀ Назад"
+
+admin-menu:
+  title: "&4&lАдмин панель кланов"
+  size: 54
+  fill-border: true
+  border-item:
+    material: RED_STAINED_GLASS_PANE
+    name: " "
+  items:
+    clan-list:
+      slot: 20
+      material: BOOK
+      name: "&eСписок кланов"
+      lore:
+        - "&7Всего кланов: &f%total_clans%"
+        - ""
+        - "&7Используйте команду:"
+        - "&f/clanadmin list"
+    search:
+      slot: 22
+      material: COMPASS
+      name: "&eПоиск клана"
+      lore:
+        - "&7Найти клан по названию"
+        - "&7или тегу"
+        - ""
+        - "&7Используйте команду:"
+        - "&f/clanadmin info <клан>"
+    stats:
+      slot: 24
+      material: PAPER
+      name: "&eОбщая статистика"
+      lore:
+        - "&7Всего кланов: &f%total_clans%"
+        - "&7Всего игроков в кланах: &f%total_players%"
+        - ""
+        - "&eНажмите для детальной статистики"
+    reload:
+      slot: 40
+      material: REPEATER
+      name: "&cПерезагрузить конфиг"
+      lore:
+        - "&7Перезагрузить все"
+        - "&7конфигурационные файлы"
+        - ""
+        - "&eНажмите для перезагрузки"

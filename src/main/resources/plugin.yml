@@ -1,0 +1,36 @@
+name: Clans
+version: ${project.version}
+main: ru.clans.ClanPlugin
+api-version: 1.16
+author: animesao
+description: Advanced Clan System with GUI, Levels, Storage and Quests
+
+softdepend: [PlaceholderAPI]
+
+commands:
+  clan:
+    description: Main clan command
+    usage: /<command> [args]
+    aliases: [clans, c]
+  clanadmin:
+    description: Admin clan commands
+    usage: /<command> [args]
+    permission: clan.admin
+  cc:
+    description: Clan chat command
+    usage: /<command> <message>
+    aliases: [clanchat]
+
+permissions:
+  clan.use:
+    description: Allows using basic clan commands
+    default: true
+  clan.admin:
+    description: Allows using admin clan commands
+    default: op
+  clan.create:
+    description: Allows creating clans
+    default: true
+  clan.bypass:
+    description: Bypass clan restrictions
+    default: op

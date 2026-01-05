@@ -1,0 +1,119 @@
+# ========================================
+#    Clan Colors Configuration
+# ========================================
+
+gui:
+  title: "&8Выбор цвета клана"
+  size: 54
+  fill-border: true
+  back-button:
+    slot: 49
+    material: ARROW
+    name: "&7Назад"
+
+# Декоративные предметы или информационные блоки
+items:
+  info:
+    slot: 4
+    material: NAME_TAG
+    name: "&eИнфо"
+    lore:
+      - "&7Здесь вы можете выбрать"
+      - "&7основной цвет вашего клана."
+      - ""
+      - "&7Цвет влияет на префикс"
+      - "&7и оформление меню."
+  filler_1:
+    slot: 0
+    material: BLACK_STAINED_GLASS_PANE
+    name: " "
+  filler_2:
+    slot: 1
+    material: BLACK_STAINED_GLASS_PANE
+    name: " "
+  filler_3:
+    slot: 2
+    material: BLACK_STAINED_GLASS_PANE
+    name: " "
+  filler_4:
+    slot: 3
+    material: BLACK_STAINED_GLASS_PANE
+    name: " "
+  filler_5:
+    slot: 5
+    material: BLACK_STAINED_GLASS_PANE
+    name: " "
+  filler_6:
+    slot: 6
+    material: BLACK_STAINED_GLASS_PANE
+    name: " "
+  filler_7:
+    slot: 7
+    material: BLACK_STAINED_GLASS_PANE
+    name: " "
+  filler_8:
+    slot: 8
+    material: BLACK_STAINED_GLASS_PANE
+    name: " "
+
+colors:
+  red:
+    name: "&cКрасный"
+    hex: "#FF0000"
+    material: RED_WOOL
+    slot: 19
+    required-level: 1
+  green:
+    name: "&aЗеленый"
+    hex: "#00FF00"
+    material: LIME_WOOL
+    slot: 20
+    required-level: 5
+  blue:
+    name: "&9Синий"
+    hex: "#0000FF"
+    material: BLUE_WOOL
+    slot: 21
+    required-level: 10
+  yellow:
+    name: "&eЖелтый"
+    hex: "#FFFF00"
+    material: YELLOW_WOOL
+    slot: 22
+    required-level: 15
+  purple:
+    name: "&dФиолетовый"
+    hex: "#800080"
+    material: PURPLE_WOOL
+    slot: 23
+    required-level: 20
+  orange:
+    name: "&6Оранжевый"
+    hex: "#FFA500"
+    material: ORANGE_WOOL
+    slot: 24
+    required-level: 25
+  cyan:
+    name: "&bБирюзовый"
+    hex: "#00FFFF"
+    material: CYAN_WOOL
+    slot: 25
+    required-level: 30
+  white:
+    name: "&fБелый"
+    hex: "#FFFFFF"
+    material: WHITE_WOOL
+    slot: 28
+    required-level: 1
+  black:
+    name: "&0Черный"
+    hex: "#000000"
+    material: BLACK_WOOL
+    slot: 29
+    required-level: 35
+  gold:
+    name: "&#FFD700Золотой"
+    hex: "#FFD700"
+    material: GOLD_INGOT
+    slot: 30
+    required-level: 50
