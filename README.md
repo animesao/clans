@@ -42,8 +42,8 @@
 2. Поместите его в папку `plugins` вашего сервера.
 3. Установите зависимости: **PlaceholderAPI** и **Vault** (опционально для экономики).
 4. Перезапустите сервер.
-5. [Установите новую версию](https://alfheimguide.ct.ws/plugins?plugin_id=15)
-6. [Wiki-1.5.0](https://alfheimguide.ct.ws/wiki_article?slug=clans-150)
+5. [Установите новую версию](https://alfheimguide.spcfy.eu/plugins?plugin_id=29)
+6. [Wiki-1.5.0](https://alfheimguide.spcfy.eu/wiki_article?slug=clans-150)
 
 ---
 *Разработано с ❤️ для Minecraft сообщества.*
